@@ -9,29 +9,28 @@
 <body>
 
   <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="logo">
-      <div class="logo-dot"></div>
-      <span>Coranu</span>
+  <!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">
+    <div class="logo-dot"></div>
+    <span>Coranu</span>
+  </div>
+
+  <div class="nav-actions">
+    <!-- SEARCH -->
+    <div class="search-container">
+      <input type="text" placeholder="Search..." id="searchInput" />
+      <button id="searchBtn">🔍</button>
     </div>
 
-    <div class="nav-actions">
-      <!-- ONLY LOGIN BUTTON -->
-      <a href="auth.html">
-        <button id="loginBtn" class="btn-primary" type="button">
-          LOGIN / REGISTER →
-        </button>
-      </a>
-    </div>
-  </header>
+    <!-- LOGIN BUTTON -->
+    <a href="auth.html" class="btn-primary" id="loginBtn">
+      LOGIN / REGISTER →
+    </a>
+  </div>
+</header>
 
-<div class="container text-center">
-
-  <a href="blog.html"><button class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#createModal">
-    ➕ Create Post
-  </button></a>
-
- 
+ <br>
   <!-- HERO -->
   <main class="hero">
     <h1>Thoughts, Ideas, and Stories</h1>
@@ -117,8 +116,7 @@
 
   </section>
 </div>
+</div>
 
-  <!-- SCRIPT -->
-  <script type="module" src="script.js"></script>
 </body>
 </html>
