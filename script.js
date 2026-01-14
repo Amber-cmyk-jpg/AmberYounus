@@ -1,5 +1,8 @@
 import { supabase } from "./supabase.js";
 
-  loginBtn.addEventListener("click", () => {
-  window.location.href = "auth.html";
-});
+const loginBtn = document.getElementById('loginBtn');
+if (loginBtn) {
+  loginBtn.addEventListener('click', () => {
+    window.location.href = 'auth.html';
+  });
+}
