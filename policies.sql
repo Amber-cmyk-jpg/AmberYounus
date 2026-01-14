@@ -24,13 +24,3 @@ USING (user_id = auth.uid());
 CREATE POLICY "Allow select for all" ON posts
 FOR SELECT
 USING (true);
-
--- OPTIONAL: If you prefer only authenticated users read posts, use:
--- CREATE POLICY "Allow select for authenticated" ON posts
--- FOR SELECT
--- USING (auth.uid() IS NOT NULL);
-
--- NOTES:
--- - The INSERT policy requires that the client sets `user_id` to the authenticated user's ID.
--- - Alternatively, you can enforce `user_id` server-side via a trigger in a secure environment.
--- - After running this migration, test by attempting insert/update/delete as different users and as an unauthenticated client.
